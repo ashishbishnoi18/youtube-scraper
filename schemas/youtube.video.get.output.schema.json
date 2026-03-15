@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "properties": {
+    "video_id": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "channel_id": {
+      "type": "string"
+    },
+    "channel_name": {
+      "type": "string"
+    },
+    "duration_seconds": {
+      "type": "integer"
+    },
+    "view_count": {
+      "type": "integer"
+    },
+    "is_live": {
+      "type": "boolean"
+    },
+    "is_private": {
+      "type": "boolean"
+    },
+    "is_family_safe": {
+      "type": "boolean"
+    },
+    "publish_date": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    }
+  }
+}

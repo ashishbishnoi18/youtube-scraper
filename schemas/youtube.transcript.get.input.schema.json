@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string",
+      "description": "YouTube video URL or video ID"
+    },
+    "language": {
+      "type": "string",
+      "description": "Preferred language code (default: en)"
+    }
+  },
+  "required": [
+    "url"
+  ]
+}

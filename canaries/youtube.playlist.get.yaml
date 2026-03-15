@@ -1,0 +1,10 @@
+version: 1
+platform_id: "youtube"
+capability_id: "youtube.playlist.get"
+cases:
+  - name: "youtube_playlist_get_1"
+    input:
+      url: "https://www.youtube.com/playlist?list=PLrAXtmErZgOeiKm4sgNOknGvNjby9efdf"
+    expect:
+      success: true
+    timeout_seconds: 60

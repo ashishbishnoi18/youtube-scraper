@@ -1,0 +1,10 @@
+version: 1
+platform_id: "youtube"
+capability_id: "youtube.search.query"
+cases:
+  - name: "youtube_search_query_1"
+    input:
+      query: "golang tutorial"
+    expect:
+      success: true
+    timeout_seconds: 60

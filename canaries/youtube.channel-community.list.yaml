@@ -1,0 +1,11 @@
+version: 1
+platform_id: "youtube"
+capability_id: "youtube.channel-community.list"
+cases:
+  - name: "youtube_channel-community_list_1"
+    input:
+      url: "https://www.youtube.com/@MrBeast"
+      limit: 3
+    expect:
+      success: true
+    timeout_seconds: 120

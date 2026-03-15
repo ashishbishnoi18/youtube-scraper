@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "query": {
+      "type": "string"
+    },
+    "results": {
+      "type": "array"
+    },
+    "results_count": {
+      "type": "integer"
+    },
+    "pages": {
+      "type": "integer"
+    }
+  }
+}

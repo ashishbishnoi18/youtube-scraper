@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "properties": {
+    "query": {
+      "type": "string",
+      "description": "Search query"
+    },
+    "filter": {
+      "type": "string",
+      "enum": [
+        "videos",
+        "channels",
+        "playlists",
+        "live",
+        "shorts",
+        "today",
+        "week",
+        "month",
+        "year"
+      ]
+    },
+    "limit": {
+      "type": "integer"
+    },
+    "max_pages": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "query"
+  ]
+}

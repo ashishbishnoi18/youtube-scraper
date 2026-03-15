@@ -1,0 +1,10 @@
+version: 1
+platform_id: "youtube"
+capability_id: "youtube.transcript.get"
+cases:
+  - name: "youtube_transcript_get_1"
+    input:
+      url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    expect:
+      success: true
+    timeout_seconds: 30

@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "video_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "duration": {
+            "type": "string"
+          },
+          "views": {
+            "type": "string"
+          },
+          "published": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "channel_id": {
+          "type": "string"
+        },
+        "tab": {
+          "type": "string"
+        },
+        "total_items": {
+          "type": "integer"
+        },
+        "pages": {
+          "type": "integer"
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

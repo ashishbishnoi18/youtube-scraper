@@ -1,0 +1,11 @@
+version: 1
+platform_id: "youtube"
+capability_id: "youtube.channel-shorts.list"
+cases:
+  - name: "youtube_channel-shorts_list_1"
+    input:
+      url: "https://www.youtube.com/@MrBeast"
+      limit: 5
+    expect:
+      success: true
+    timeout_seconds: 120

@@ -1,0 +1,183 @@
+{
+  "contract_version": "modspec/v1",
+  "platform_id": "youtube",
+  "module_version": "1.0.0",
+  "name": "YouTube Scraper",
+  "description": "Scrapes YouTube videos, channels, playlists, comments, search results, and transcripts via the InnerTube API.",
+  "go_module_path": "github.com/embedtools/youtube-scraper",
+  "public_packages": [
+    "scraper",
+    "types"
+  ],
+  "network_mode": "host_fetch",
+  "defaults": {
+    "timeout_ms": 30000
+  },
+  "runtime": {
+    "worker_class": "generic",
+    "min_workers": 1,
+    "max_workers": 4,
+    "startup_timeout_ms": 5000,
+    "idle_ttl_ms": 300000,
+    "recycle_after_runs": 100,
+    "max_memory_mb": 512
+  },
+  "x-ui": {
+    "logo_path": "assets/logo.svg",
+    "icon_path": "assets/icon.svg",
+    "brand_color": "#FF0000"
+  },
+  "capabilities": [
+    {
+      "id": "youtube.video.get",
+      "name": "Get Video",
+      "description": "Fetch metadata, streaming data, and engagement stats for a single YouTube video.",
+      "method": "GetVideo",
+      "timeout_ms": 60000,
+      "run_cost": 1,
+      "max_fetch_parallelism": 1,
+      "default_async": true,
+      "input_schema": "schemas/youtube.video.get.input.schema.json",
+      "output_schema": "schemas/youtube.video.get.output.schema.json",
+      "example_input": "examples/youtube.video.get.json",
+      "canary": "canaries/youtube.video.get.yaml"
+    },
+    {
+      "id": "youtube.channel.get",
+      "name": "Get Channel",
+      "description": "Fetch metadata for a YouTube channel.",
+      "method": "GetChannel",
+      "timeout_ms": 60000,
+      "run_cost": 1,
+      "max_fetch_parallelism": 1,
+      "default_async": true,
+      "input_schema": "schemas/youtube.channel.get.input.schema.json",
+      "output_schema": "schemas/youtube.channel.get.output.schema.json",
+      "example_input": "examples/youtube.channel.get.json",
+      "canary": "canaries/youtube.channel.get.yaml"
+    },
+    {
+      "id": "youtube.channel-videos.list",
+      "name": "List Channel Videos",
+      "description": "Stream videos from a channel's videos tab with pagination.",
+      "method": "ListChannelVideos",
+      "timeout_ms": 120000,
+      "run_cost": 2,
+      "max_fetch_parallelism": 3,
+      "default_async": true,
+      "input_schema": "schemas/youtube.channel-videos.list.input.schema.json",
+      "output_schema": "schemas/youtube.channel-videos.list.output.schema.json",
+      "example_input": "examples/youtube.channel-videos.list.json",
+      "canary": "canaries/youtube.channel-videos.list.yaml"
+    },
+    {
+      "id": "youtube.channel-shorts.list",
+      "name": "List Channel Shorts",
+      "description": "Stream shorts from a channel's shorts tab.",
+      "method": "ListChannelShorts",
+      "timeout_ms": 120000,
+      "run_cost": 2,
+      "max_fetch_parallelism": 3,
+      "default_async": true,
+      "input_schema": "schemas/youtube.channel-shorts.list.input.schema.json",
+      "output_schema": "schemas/youtube.channel-shorts.list.output.schema.json",
+      "example_input": "examples/youtube.channel-shorts.list.json",
+      "canary": "canaries/youtube.channel-shorts.list.yaml"
+    },
+    {
+      "id": "youtube.channel-playlists.list",
+      "name": "List Channel Playlists",
+      "description": "Stream playlists from a channel's playlists tab.",
+      "method": "ListChannelPlaylists",
+      "timeout_ms": 120000,
+      "run_cost": 2,
+      "max_fetch_parallelism": 3,
+      "default_async": true,
+      "input_schema": "schemas/youtube.channel-playlists.list.input.schema.json",
+      "output_schema": "schemas/youtube.channel-playlists.list.output.schema.json",
+      "example_input": "examples/youtube.channel-playlists.list.json",
+      "canary": "canaries/youtube.channel-playlists.list.yaml"
+    },
+    {
+      "id": "youtube.channel-community.list",
+      "name": "List Channel Community",
+      "description": "Stream community posts from a channel's community tab.",
+      "method": "ListChannelCommunity",
+      "timeout_ms": 120000,
+      "run_cost": 2,
+      "max_fetch_parallelism": 3,
+      "default_async": true,
+      "input_schema": "schemas/youtube.channel-community.list.input.schema.json",
+      "output_schema": "schemas/youtube.channel-community.list.output.schema.json",
+      "example_input": "examples/youtube.channel-community.list.json",
+      "canary": "canaries/youtube.channel-community.list.yaml"
+    },
+    {
+      "id": "youtube.comments.list",
+      "name": "List Comments",
+      "description": "Stream comments for a YouTube video.",
+      "method": "ListComments",
+      "timeout_ms": 120000,
+      "run_cost": 2,
+      "max_fetch_parallelism": 3,
+      "default_async": true,
+      "input_schema": "schemas/youtube.comments.list.input.schema.json",
+      "output_schema": "schemas/youtube.comments.list.output.schema.json",
+      "example_input": "examples/youtube.comments.list.json",
+      "canary": "canaries/youtube.comments.list.yaml"
+    },
+    {
+      "id": "youtube.search.query",
+      "name": "Search",
+      "description": "Search YouTube for videos, channels, and playlists.",
+      "method": "Search",
+      "timeout_ms": 60000,
+      "run_cost": 2,
+      "max_fetch_parallelism": 3,
+      "default_async": true,
+      "input_schema": "schemas/youtube.search.query.input.schema.json",
+      "output_schema": "schemas/youtube.search.query.output.schema.json",
+      "example_input": "examples/youtube.search.query.json",
+      "canary": "canaries/youtube.search.query.yaml"
+    },
+    {
+      "id": "youtube.playlist.get",
+      "name": "Get Playlist",
+      "description": "Fetch metadata and videos for a YouTube playlist.",
+      "method": "GetPlaylist",
+      "timeout_ms": 60000,
+      "run_cost": 1,
+      "max_fetch_parallelism": 1,
+      "default_async": true,
+      "input_schema": "schemas/youtube.playlist.get.input.schema.json",
+      "output_schema": "schemas/youtube.playlist.get.output.schema.json",
+      "example_input": "examples/youtube.playlist.get.json",
+      "canary": "canaries/youtube.playlist.get.yaml"
+    },
+    {
+      "id": "youtube.transcript.get",
+      "name": "Get Transcript",
+      "description": "Fetch the transcript/captions for a YouTube video.",
+      "method": "GetTranscript",
+      "timeout_ms": 30000,
+      "run_cost": 1,
+      "max_fetch_parallelism": 1,
+      "default_async": false,
+      "input_schema": "schemas/youtube.transcript.get.input.schema.json",
+      "output_schema": "schemas/youtube.transcript.get.output.schema.json",
+      "example_input": "examples/youtube.transcript.get.json",
+      "canary": "canaries/youtube.transcript.get.yaml"
+    }
+  ],
+  "x-network": {
+    "requires_tls_fingerprinting": false,
+    "requires_proxy": false
+  },
+  "x-meta": {
+    "module_id": "youtube-scraper",
+    "author": "embedtools",
+    "license": "MIT",
+    "entry_package": "scraper",
+    "version": "1.0.0"
+  }
+}

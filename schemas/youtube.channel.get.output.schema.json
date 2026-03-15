@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "properties": {
+    "channel_id": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "subscriber_count_text": {
+      "type": "string"
+    },
+    "video_count_text": {
+      "type": "string"
+    },
+    "is_family_safe": {
+      "type": "boolean"
+    }
+  }
+}

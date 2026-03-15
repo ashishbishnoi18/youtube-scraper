@@ -1,0 +1,10 @@
+version: 1
+platform_id: "youtube"
+capability_id: "youtube.channel.get"
+cases:
+  - name: "youtube_channel_get_1"
+    input:
+      url: "https://www.youtube.com/@MrBeast"
+    expect:
+      success: true
+    timeout_seconds: 60

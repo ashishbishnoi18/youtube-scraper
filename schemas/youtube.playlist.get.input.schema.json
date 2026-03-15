@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string",
+      "description": "YouTube playlist URL or playlist ID"
+    },
+    "fields": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "limit": {
+      "type": "integer"
+    },
+    "max_pages": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "url"
+  ]
+}
