@@ -1,7 +1,7 @@
 {
   "contract_version": "modspec/v1",
   "platform_id": "youtube",
-  "module_version": "1.0.1",
+  "module_version": "1.0.2",
   "name": "YouTube Scraper",
   "description": "Scrapes YouTube videos, channels, playlists, comments, search results, and transcripts via the InnerTube API.",
   "go_module_path": "github.com/embedtools/youtube-scraper",
@@ -85,20 +85,6 @@
       "canary": "canaries/youtube.channel-shorts.list.yaml"
     },
     {
-      "id": "youtube.channel-playlists.list",
-      "name": "List Channel Playlists",
-      "description": "Stream playlists from a channel's playlists tab.",
-      "method": "ListChannelPlaylists",
-      "timeout_ms": 120000,
-      "run_cost": 2,
-      "max_fetch_parallelism": 3,
-      "default_async": true,
-      "input_schema": "schemas/youtube.channel-playlists.list.input.schema.json",
-      "output_schema": "schemas/youtube.channel-playlists.list.output.schema.json",
-      "example_input": "examples/youtube.channel-playlists.list.json",
-      "canary": "canaries/youtube.channel-playlists.list.yaml"
-    },
-    {
       "id": "youtube.channel-community.list",
       "name": "List Channel Community",
       "description": "Stream community posts from a channel's community tab.",
@@ -164,6 +150,6 @@
     "author": "embedtools",
     "license": "MIT",
     "entry_package": "scraper",
-    "version": "1.0.1"
+    "version": "1.0.2"
   }
 }
