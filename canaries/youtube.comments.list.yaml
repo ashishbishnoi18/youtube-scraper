@@ -7,5 +7,5 @@ cases:
       url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       limit: 5
     expect:
-      success: true
+      min_results: 1
     timeout_seconds: 120

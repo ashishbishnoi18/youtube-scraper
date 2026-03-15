@@ -7,5 +7,5 @@ cases:
       url: "https://www.youtube.com/@MrBeast"
       limit: 3
     expect:
-      success: true
+      min_results: 1
     timeout_seconds: 120

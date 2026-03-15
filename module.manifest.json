@@ -1,7 +1,7 @@
 {
   "contract_version": "modspec/v1",
   "platform_id": "youtube",
-  "module_version": "1.0.0",
+  "module_version": "1.0.1",
   "name": "YouTube Scraper",
   "description": "Scrapes YouTube videos, channels, playlists, comments, search results, and transcripts via the InnerTube API.",
   "go_module_path": "github.com/embedtools/youtube-scraper",
@@ -153,20 +153,6 @@
       "output_schema": "schemas/youtube.playlist.get.output.schema.json",
       "example_input": "examples/youtube.playlist.get.json",
       "canary": "canaries/youtube.playlist.get.yaml"
-    },
-    {
-      "id": "youtube.transcript.get",
-      "name": "Get Transcript",
-      "description": "Fetch the transcript/captions for a YouTube video.",
-      "method": "GetTranscript",
-      "timeout_ms": 30000,
-      "run_cost": 1,
-      "max_fetch_parallelism": 1,
-      "default_async": false,
-      "input_schema": "schemas/youtube.transcript.get.input.schema.json",
-      "output_schema": "schemas/youtube.transcript.get.output.schema.json",
-      "example_input": "examples/youtube.transcript.get.json",
-      "canary": "canaries/youtube.transcript.get.yaml"
     }
   ],
   "x-network": {
@@ -178,6 +164,6 @@
     "author": "embedtools",
     "license": "MIT",
     "entry_package": "scraper",
-    "version": "1.0.0"
+    "version": "1.0.1"
   }
 }

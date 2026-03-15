@@ -6,5 +6,5 @@ cases:
     input:
       url: "https://www.youtube.com/playlist?list=PLrAXtmErZgOeiKm4sgNOknGvNjby9efdf"
     expect:
-      success: true
+      min_results: 1
     timeout_seconds: 60
