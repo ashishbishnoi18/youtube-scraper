@@ -40,7 +40,8 @@
       "input_schema": "schemas/youtube.video.get.input.schema.json",
       "output_schema": "schemas/youtube.video.get.output.schema.json",
       "example_input": "examples/youtube.video.get.json",
-      "canary": "canaries/youtube.video.get.yaml"
+      "canary": "canaries/youtube.video.get.yaml",
+      "billing_metric": "per_request"
     },
     {
       "id": "youtube.channel.get",
@@ -54,7 +55,8 @@
       "input_schema": "schemas/youtube.channel.get.input.schema.json",
       "output_schema": "schemas/youtube.channel.get.output.schema.json",
       "example_input": "examples/youtube.channel.get.json",
-      "canary": "canaries/youtube.channel.get.yaml"
+      "canary": "canaries/youtube.channel.get.yaml",
+      "billing_metric": "per_request"
     },
     {
       "id": "youtube.channel-videos.list",
@@ -68,7 +70,8 @@
       "input_schema": "schemas/youtube.channel-videos.list.input.schema.json",
       "output_schema": "schemas/youtube.channel-videos.list.output.schema.json",
       "example_input": "examples/youtube.channel-videos.list.json",
-      "canary": "canaries/youtube.channel-videos.list.yaml"
+      "canary": "canaries/youtube.channel-videos.list.yaml",
+      "billing_metric": "collection:items"
     },
     {
       "id": "youtube.channel-shorts.list",
@@ -82,7 +85,8 @@
       "input_schema": "schemas/youtube.channel-shorts.list.input.schema.json",
       "output_schema": "schemas/youtube.channel-shorts.list.output.schema.json",
       "example_input": "examples/youtube.channel-shorts.list.json",
-      "canary": "canaries/youtube.channel-shorts.list.yaml"
+      "canary": "canaries/youtube.channel-shorts.list.yaml",
+      "billing_metric": "collection:items"
     },
     {
       "id": "youtube.channel-community.list",
@@ -96,7 +100,8 @@
       "input_schema": "schemas/youtube.channel-community.list.input.schema.json",
       "output_schema": "schemas/youtube.channel-community.list.output.schema.json",
       "example_input": "examples/youtube.channel-community.list.json",
-      "canary": "canaries/youtube.channel-community.list.yaml"
+      "canary": "canaries/youtube.channel-community.list.yaml",
+      "billing_metric": "collection:items"
     },
     {
       "id": "youtube.comments.list",
@@ -110,7 +115,8 @@
       "input_schema": "schemas/youtube.comments.list.input.schema.json",
       "output_schema": "schemas/youtube.comments.list.output.schema.json",
       "example_input": "examples/youtube.comments.list.json",
-      "canary": "canaries/youtube.comments.list.yaml"
+      "canary": "canaries/youtube.comments.list.yaml",
+      "billing_metric": "collection:items"
     },
     {
       "id": "youtube.search.query",
@@ -124,7 +130,8 @@
       "input_schema": "schemas/youtube.search.query.input.schema.json",
       "output_schema": "schemas/youtube.search.query.output.schema.json",
       "example_input": "examples/youtube.search.query.json",
-      "canary": "canaries/youtube.search.query.yaml"
+      "canary": "canaries/youtube.search.query.yaml",
+      "billing_metric": "collection:results"
     },
     {
       "id": "youtube.playlist.get",
@@ -138,7 +145,8 @@
       "input_schema": "schemas/youtube.playlist.get.input.schema.json",
       "output_schema": "schemas/youtube.playlist.get.output.schema.json",
       "example_input": "examples/youtube.playlist.get.json",
-      "canary": "canaries/youtube.playlist.get.yaml"
+      "canary": "canaries/youtube.playlist.get.yaml",
+      "billing_metric": "per_request"
     }
   ],
   "x-network": {
