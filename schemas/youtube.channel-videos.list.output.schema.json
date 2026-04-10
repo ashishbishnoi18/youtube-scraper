@@ -24,7 +24,8 @@
           "published": {
             "type": "string"
           }
-        }
+        },
+        "additionalProperties": true
       }
     },
     "summary": {
@@ -42,7 +43,8 @@
         "pages": {
           "type": "integer"
         }
-      }
+      },
+      "additionalProperties": true
     }
   },
   "additionalProperties": true

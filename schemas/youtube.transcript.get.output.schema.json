@@ -25,5 +25,6 @@
     "full_text": {
       "type": "string"
     }
-  }
+  },
+  "additionalProperties": true
 }

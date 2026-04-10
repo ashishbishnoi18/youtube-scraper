@@ -30,7 +30,8 @@
           "is_pinned": {
             "type": "boolean"
           }
-        }
+        },
+        "additionalProperties": true
       }
     },
     "summary": {
@@ -45,7 +46,8 @@
         "pages": {
           "type": "integer"
         }
-      }
+      },
+      "additionalProperties": true
     }
   },
   "additionalProperties": true
