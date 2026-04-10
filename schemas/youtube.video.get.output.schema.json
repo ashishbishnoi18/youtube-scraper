@@ -39,6 +39,22 @@
     },
     "category": {
       "type": "string"
-    }
-  }
+    },
+    "available_countries": {},
+    "channel_subscriber_count": {},
+    "channel_thumbnail": {},
+    "channel_url": {},
+    "date_text": {},
+    "embed_url": {},
+    "full_description": {},
+    "is_unlisted": {},
+    "keywords": {},
+    "like_count_a11y": {},
+    "like_count_text": {},
+    "short_view_count": {},
+    "thumbnails": {},
+    "upload_date": {},
+    "view_count_text": {}
+  },
+  "additionalProperties": true
 }

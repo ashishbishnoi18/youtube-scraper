@@ -21,6 +21,14 @@
     },
     "is_family_safe": {
       "type": "boolean"
-    }
-  }
+    },
+    "available_countries": {},
+    "available_tabs": {},
+    "avatar": {},
+    "external_id": {},
+    "keywords": {},
+    "rss_url": {},
+    "vanity_url": {}
+  },
+  "additionalProperties": true
 }
