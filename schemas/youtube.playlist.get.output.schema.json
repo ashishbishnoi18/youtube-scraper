@@ -1,36 +1,3 @@
 {
-  "type": "object",
-  "properties": {
-    "playlist_id": {
-      "type": "string"
-    },
-    "url": {
-      "type": "string"
-    },
-    "title": {
-      "type": "string"
-    },
-    "description": {
-      "type": "string"
-    },
-    "owner": {
-      "type": "string"
-    },
-    "videos": {
-      "type": "array"
-    },
-    "video_count": {
-      "type": "integer"
-    },
-    "pages": {
-      "type": "integer"
-    },
-    "is_editable": {},
-    "last_updated": {},
-    "owner_channel_id": {},
-    "thumbnails": {},
-    "total_videos_text": {},
-    "total_views_text": {}
-  },
   "additionalProperties": true
 }
